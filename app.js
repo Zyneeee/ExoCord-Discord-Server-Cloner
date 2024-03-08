@@ -7,7 +7,7 @@ import input from "input";
 dotenv.config();
 
 const main = async () => {
-  let originServerId = await input.text("Enter server ID to clone");
+  let originServerId = await input.text("1215601017970753546");
   const createdServerId = await createServer(originServerId);
   console.log("Created server");
   const channels = await getChannels(originServerId);
